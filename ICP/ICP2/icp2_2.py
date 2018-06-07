@@ -1,5 +1,7 @@
 fh = open('q2input.txt')
+f = open('myfile', 'w')
 for line in fh:
     line = line.strip();
-    print(line,',',len(line))
+    t = line+','+ str(len(line))+'\n'
+    f.write(t)
 fh.close()
